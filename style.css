@@ -1,0 +1,108 @@
+*{box-sizing: border-box;}
+body{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4c4;
+}
+@font-face {
+    font-family: Montserat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf)
+  }
+@font-face {
+    font-family: Fraunces;
+    src: url(fonts/gfraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)
+  }
+h1{
+    font-family: Fraunces;
+    font-weight: 700px;
+    line-height: 30px;
+}
+p{
+    font-family: Montserat;
+    font-size: 14px;
+  }
+main{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin: 70px auto;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+.as555{
+    width: 210px;
+    margin: 0 auto;
+}
+.img1{
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+    width: 100%;
+    max-width: 50%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.cont-content{
+    margin: 0px auto;
+    width: 50%;
+}
+.cont-price{
+    display: flex;
+    
+}
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: Fraunces;
+}
+.price2{
+    align-self: flex-start;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin: 0;
+}
+button{
+    width: 100%;
+    border: 0px;
+    background-color: #073615;
+    color: #f4f4f4;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+svg{
+    margin-right: 7px;
+    font-family: Montserat;
+}
+button:hover{
+    background-color: #06140a;
+}
+@media (max-width: 376px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 300px;
+    }
+    .img1{
+        background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        max-height: 30%;
+        height: 100%;
+        max-width: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+    .cont-content{
+        height: 70%;
+        width: 100%;
+    }
+    .as555{
+        width: 210px;
+    }
+    
+}
